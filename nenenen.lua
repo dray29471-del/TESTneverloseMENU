@@ -1822,7 +1822,7 @@ function Library:AddWindow(hubTitle, hubImage, gameTitle)
 		img.Name = "HubGlyph"
 		img.Size = UDim2.fromScale(1, 1)
 		img.BackgroundTransparency = 1
-		img.Image = "rbxthumb://type=Asset&id=8028450081&w=420&h=420"
+		img.Image = "rbxthumb://type=Asset&id=18647834108&w=420&h=420"
 		img.ImageRectOffset = Vector2.new(48, 48)
 		img.ImageRectSize = Vector2.new(324, 324)
 		img.ScaleType = Enum.ScaleType.Stretch
@@ -2828,7 +2828,7 @@ SilentVoid.LayoutOrder = 1
 SilentVoid.Size = UDim2.fromOffset(16, 16)
 SilentVoid.BackgroundTransparency = 1
 SilentVoid.BorderSizePixel = 0
-SilentVoid.Image = hubImage ~= "" and hubImage or "rbxthumb://type=Asset&id=8028450081&w=420&h=420"
+SilentVoid.Image = hubImage ~= "" and hubImage or "rbxthumb://type=Asset&id=18647834108&w=420&h=420"
 SilentVoid.ImageColor3 = Color3.new(1, 1, 1)
 SilentVoid.ScaleType = Enum.ScaleType.Fit
 SilentVoid.ZIndex = Z_BASE + 901
@@ -13323,7 +13323,7 @@ New("Frame", {
 			"rbxassetid://127234874352422", "rbxassetid://104941258142372",
 			"rbxassetid://82464660673318", "rbxassetid://136533241128438",
 			"rbxassetid://114499998778667", "rbxassetid://6031154871",
-			hubImage ~= "" and hubImage or "rbxthumb://type=Asset&id=8028450081&w=420&h=420",
+			hubImage ~= "" and hubImage or "rbxthumb://type=Asset&id=18647834108&w=420&h=420",
 			"rbxthumb://type=AvatarHeadShot&id=" .. tostring(LocalPlayer.UserId or 0) .. "&w=150&h=150",
 		}
 		local preloader = New("Frame", {
