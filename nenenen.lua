@@ -1822,7 +1822,7 @@ function Library:AddWindow(hubTitle, hubImage, gameTitle)
 		img.Name = "HubGlyph"
 		img.Size = UDim2.fromScale(1, 1)
 		img.BackgroundTransparency = 1
-		img.Image = "rbxthumb://type=Asset&id=118608145176297&w=420&h=420"
+		img.Image = "rbxassetid://8028450081"
 		img.ImageRectOffset = Vector2.new(48, 48)
 		img.ImageRectSize = Vector2.new(324, 324)
 		img.ScaleType = Enum.ScaleType.Stretch
