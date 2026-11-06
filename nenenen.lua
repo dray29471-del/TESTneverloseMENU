@@ -4116,8 +4116,8 @@ WindowObj.KeybindList = {
 }
 
 local SpecPanel, SpecRows = MakeOverlayPanel("Spectators", OV.icons.eye, "Spectators")
-local specEnabled = true
-local specAuto = true
+local specEnabled = false
+local specAuto = false
 local specList = {}
 local specRowCache = {}
 
@@ -13354,4 +13354,16 @@ New("Frame", {
 	return WindowObj
 end
 
-return Library
+-- ==========================================
+-- АВТОЗАПУСК МЕНЮ И КНОПОК
+-- ==========================================
+local Win = Library:AddWindow("SilentVoid", "", "FTAP")
+local Main = Win:AddTab("Main", "home")
+local Sec = Main:AddSection("General", "left")
+
+Sec:AddToggle("Enabled", false, function(v) print("toggle:", v) end)
+Sec:AddSlider("Speed", 0, 100, 50, function(v) print("speed:", v) end, "")
+Sec:AddDropdown("Mode", { "Legit", "Rage", "Custom" }, "Legit", function(v) print("mode:", v) end)
+Sec:AddColorpicker("Accent", Color3.fromRGB(78, 139, 255), function(c) print("color:", c) end)
+
+return Library -- Оставляем это на всякий случай
